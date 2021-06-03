@@ -1,0 +1,103 @@
+.form__postcode {
+    border-top: 1px solid #E7E7E9;
+    border-bottom: 1px solid #E7E7E9;
+    .form__field {
+        margin: 20px 25px;
+    }
+    label {
+        width: 100%;
+    }
+    input {
+        width: 100%;
+        max-width: 434px;
+    }
+    .icon-path {
+        position: relative;
+        margin: 0;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 18px;
+            left: 20px;
+            z-index: 10;
+            background: #000;
+            width: 12px;
+            height: 12px;
+            background: url('/img/svg/Path.svg');
+        }
+    }
+    input.postcode {
+        display: block;
+        position: relative;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 14px;
+        color: #43596C;
+        text-indent: 42px;
+        height: 46px;
+        background: #F9F9FB;
+        border: 1px solid #E7E7E9;
+        box-sizing: border-box;
+        border-radius: 5px;
+        outline: none;
+    }
+    .btn {
+        outline: none;
+        border: none;
+    }
+}
+
+// popup
+.popup__wrap {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    background: #000000e6;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    &.open {
+        display: flex;
+    }
+    .popup__content {
+        position: relative;
+        width: 100%;
+        max-width: 484px;
+        background: #F9F9FB;
+        overflow: hidden;
+        border-radius: 10px;
+        .head-text {
+            background: #fff;
+            padding: 25px;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 19px;
+            color: #0D0B22;
+            .info-icon {
+                width: 14px;
+                height: 15px;
+                margin-left: 10px;
+            }
+        }
+        .close-popup-btn {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            top: 29px;
+            right: 25px;
+            z-index: 10;
+            cursor: pointer;
+        }
+        .btn.white {
+            max-width: 434px;
+            width: 100%;
+            margin: 25px;
+        }
+        .form__postcode {
+            background: #fff;
+        }
+    }
+}

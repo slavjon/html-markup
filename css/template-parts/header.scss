@@ -1,0 +1,189 @@
+.header__top-bar {
+    background: #F9F9FB;
+    .top-mnu {
+        display: flex;
+        justify-content: center;
+        padding: 13px 0;
+        border-bottom: 1px solid #E7E7E9;
+        li {
+            margin-right: 60px;
+            &:last-child {
+                margin-right: 0;
+            }
+            img {
+                margin-right: 8px;
+                width: 12px;
+                height: 12px;
+            }
+            a {
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 14px;
+                color: #0D0B22;
+            }
+        }
+    }
+}
+
+.search-form {
+    position: relative;
+    width: 100%;
+    .form__search-inp {
+        width: 100%;
+        height: 46px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 14px;
+        text-indent: 20px;
+        color: #0D0B22;
+        background: #F9F9FB;
+        border: 1px solid #E7E7E9;
+        box-sizing: border-box;
+        border-radius: 5px;
+        outline: none;
+    }
+    .search-icon-btn {
+        position: absolute;
+        padding: 0;
+        top: 0;
+        right: 0;
+        left: auto;
+        border: none;
+        background: transparent;
+        width: 12px;
+        height: 46px;
+        width: 46px;
+        background-image: url(/img/svg/search-i.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
+
+.cart__icons-wrap {
+    ul {
+        display: flex;
+        li {
+            a {
+                img {
+                    max-width: 14px;
+                    height: 14px;
+                }
+            }
+            &.fav-product {
+                position: relative;
+                .count {
+                    position: absolute;
+                    top: -3px;
+                    right: -8px;
+                    width: 15px;
+                    height: 15px;
+                    font-weight: 500;
+                    font-size: 10px;
+                    line-height: 12px;
+                    border-radius: 50%;
+                    text-align: center;
+                    color: #fff;
+                    background: #FE2626;
+                    user-select: none;
+                }
+            }
+        }
+    }
+}
+
+.header__main {
+    display: flex;
+    justify-content: space-between;
+    padding: 23px 25px 25px;
+    .logo-wrap {
+        display: flex;
+        align-items: center;
+        a {
+            display: block;
+        }
+        img {
+            max-width: 96px;
+        }
+    }
+    .search-form {
+        max-width: 418px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .search-wrap {
+            width: 100%;
+            position: relative;
+        }
+    }
+    .cart-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-end;
+        .cart__icons-wrap {
+            margin-right: 21px;
+            li {
+                margin-right: 15px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+.hamburger-mnu {
+    width: 18px;
+    height: 15px;
+    cursor: pointer;
+    span {
+        display: block;
+        background: #0D0B22;
+        border-radius: 2px;
+        width: 18px;
+        height: 2px;
+        margin-bottom: 4px;
+    }
+}
+
+.mobile__header {
+    display: none;
+    padding: 20px 0;
+    .hamburger-mnu {
+        margin-right: 15px;
+    }
+    .row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        .col {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .logo {
+        display: block;
+        max-width: 78px;
+    }
+    .cart__icons-wrap {
+        li {
+            margin-right: 15px;
+            &:last-child {
+                margin: 0;
+            }
+        }
+        img {
+            height: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .desktop__header {
+        display: none;
+    }
+    .mobile__header {
+        display: block;
+    }
+}

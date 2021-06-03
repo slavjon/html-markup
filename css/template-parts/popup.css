@@ -1,0 +1,124 @@
+.form__postcode {
+  border-top: 1px solid #E7E7E9;
+  border-bottom: 1px solid #E7E7E9;
+}
+
+.form__postcode .form__field {
+  margin: 20px 25px;
+}
+
+.form__postcode label {
+  width: 100%;
+}
+
+.form__postcode input {
+  width: 100%;
+  max-width: 434px;
+}
+
+.form__postcode .icon-path {
+  position: relative;
+  margin: 0;
+}
+
+.form__postcode .icon-path::before {
+  content: '';
+  position: absolute;
+  top: 18px;
+  left: 20px;
+  z-index: 10;
+  background: #000;
+  width: 12px;
+  height: 12px;
+  background: url("/img/svg/Path.svg");
+}
+
+.form__postcode input.postcode {
+  display: block;
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  color: #43596C;
+  text-indent: 42px;
+  height: 46px;
+  background: #F9F9FB;
+  border: 1px solid #E7E7E9;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  outline: none;
+}
+
+.form__postcode .btn {
+  outline: none;
+  border: none;
+}
+
+.popup__wrap {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  background: #000000e6;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popup__wrap.open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.popup__wrap .popup__content {
+  position: relative;
+  width: 100%;
+  max-width: 484px;
+  background: #F9F9FB;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.popup__wrap .popup__content .head-text {
+  background: #fff;
+  padding: 25px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0D0B22;
+}
+
+.popup__wrap .popup__content .head-text .info-icon {
+  width: 14px;
+  height: 15px;
+  margin-left: 10px;
+}
+
+.popup__wrap .popup__content .close-popup-btn {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 29px;
+  right: 25px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.popup__wrap .popup__content .btn.white {
+  max-width: 434px;
+  width: 100%;
+  margin: 25px;
+}
+
+.popup__wrap .popup__content .form__postcode {
+  background: #fff;
+}
+/*# sourceMappingURL=popup.css.map */
