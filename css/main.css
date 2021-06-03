@@ -974,7 +974,7 @@ main {
   background: #000;
   width: 12px;
   height: 12px;
-  background: url("/img/svg/Path.svg");
+  background: url("../img/svg/Path.svg");
 }
 
 .form__postcode input.postcode {
@@ -1141,7 +1141,7 @@ ul {
   left: 25px;
   width: 13px;
   height: 12px;
-  background-image: url(/img/svg/order.svg);
+  background-image: url(../img/svg/order.svg);
   background-size: cover;
 }
 
@@ -1156,7 +1156,7 @@ ul {
   right: 30px;
   width: 16px;
   height: 9px;
-  background-image: url(/img/svg/arr-r.svg);
+  background-image: url(../img/svg/arr-r.svg);
   background-size: cover;
 }
 
